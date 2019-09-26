@@ -10,8 +10,8 @@ default: &default
   database: api_k8s
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   username: root
-  password:
-  host: localhost
+  password: password
+  host: db
 
 development:
   <<: *default
